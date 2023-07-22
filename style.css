@@ -1,0 +1,353 @@
+/* Importing Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,600;0,700;1,400&display=swap');
+
+/* Basic Reset  */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+.alignCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgb(255, 255, 255);
+  font-size: 12px;
+  display: flex;
+  /* gap: 5px; */
+
+}
+
+/* Set the width and height of the scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+/* Customize the look of the scrollbar thumb (the draggable handle) */
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+/* Customize the look of the scrollbar track (the area behind the thumb) */
+::-webkit-scrollbar-track {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+/* Vertical Header  */
+.vertical {
+  background-color:white;
+  width: 10%;
+  height: 100vh;
+  /* position: fixed; */
+  position: sticky;
+  top: 0px;
+  padding: 1rem;
+}
+
+.icons {
+  justify-content: space-between;
+  height: 60%;
+
+}
+
+.icons img {
+  width: 2rem;
+  cursor: pointer;
+}
+
+.icons p {
+  font-size: .7rem;
+}
+
+
+.rightSide {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Horizontal Header  */
+.horizontal {
+  background-color: #fff;
+  display: flex;
+  max-height: 25%;
+  flex-direction: column;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  /* border: 1px solid red; */
+}
+
+.searchBox {
+  /* padding: .5rem; */
+  margin: .5rem;
+  /* border: 1px solid black; */
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  height: 50%;
+  justify-content: space-between;
+  /* cursor: pointer; */
+
+
+}
+.ytlogoBox{
+  /* border: 2px solid; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  height: 100%;
+}
+.ytLogo {
+  cursor: pointer;
+
+  width: 5rem;
+}
+
+.searchBarBox {
+  /* border: 1px solid blue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 70%;
+
+
+}
+
+.inputFieldBox {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  border-radius: 5rem;
+  /* width: 35rem; */
+  width: 80%;
+  height: 75%;
+  border: .1px solid lightgray;
+  /* border: 2px solid red; */
+  /* overflow: hidden; */
+}
+
+.inputFieldBox input {
+
+  /* border-width: .5px; */
+  /* border-color: lightgray; */
+  border-radius: 5rem 0px 0px 5rem;
+  border: .1px solid lightgray;
+  color: black;
+  cursor: pointer;
+  height: 100%;
+  outline: none;
+  padding-left: 1rem;
+  width: 92%;
+
+
+}
+
+.inputFieldBox input:hover {
+  border-color: rgb(28, 86, 194);
+
+}
+
+.searchIcon {
+  /* height: 6vh; */
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  border-radius: 0px 5rem 5rem 0px;
+  /* border: 1px solid blue; */
+}
+.searchIcon img{
+  width: 50%;
+
+}
+/* .searchBarBox img, */
+.mic,
+.ringBox img {
+  width: 1.7rem;
+  cursor: pointer;
+
+}
+
+.ringBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  width: 20%;
+  /* border: 1px solid red; */
+  height: 100%;
+}
+
+.profileImg{
+  border-radius: 50%;
+}
+
+.categorySort {
+  /* border: 1px solid black; */
+  /* margin: .5rem; */
+  height: 50%;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  overflow-x: scroll;
+}
+
+.categorySort ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+.categorySort ul li {
+  padding: .5rem;
+  background-color: #F2F2F2;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.categorySort ul li:hover{
+
+}
+
+/* The Rest Space For Videos */
+.videoSection {
+  background-color: #ffffff;
+  /* border: 1px solid rgb(0, 0, 0); */
+  padding: .1rem;
+  height: 100vh;
+  overflow: scroll;
+  /* width: 100%; */
+}
+
+.sectionA{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  margin: 1rem 0px;
+  flex-wrap: wrap;
+  /* background-color: red; */
+}
+.video1{
+  width: 30%;
+
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.video1 iframe{
+  height: 100%;
+  width: 100%;
+}
+.video1 iframe:hover{
+  opacity: .9;
+}
+
+
+@media (max-width: 768px) {
+  body{
+    font-size: 10px;
+  }
+  .icons{
+    height: 40%;
+  }
+  .icons img{
+    width: 1.5rem;
+    
+    margin: 0px;
+  }
+  .vertical{
+    width: 15%;
+  }
+  
+  .sectionA{
+    /* background-color: rgb(67, 142, 48); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 1rem; */
+    /* border: 2px solid black; */
+    height: 100%;
+  }
+  .video1{
+    /* background-color: rgb(231, 37, 37); */
+    width: 100%;
+    padding: 0px;
+    /* max-height: 20rem; */
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .video1 iframe {
+    width: 90%;
+    height: 100%;
+  } 
+}
+
+@media (max-width: 680px) {
+  body{
+    font-size: 12px;
+  }
+  .vertical{
+    display: none;
+  }
+  .horizontal{
+    /* background-color: red; */
+    width: 100%;
+  }
+  .searchBox{
+    /* border: 2px solid black; */
+    padding: 0px 2rem;
+    overflow: hidden;
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+    /* gap: 1rem; */
+  }
+  
+  .ytlogoBox{
+    /* border: 2px solid red; */
+    width: 20%;
+  }
+  .ytLogo{
+    height: 80%;
+    /* border: 1px solid black; */
+  }
+  .searchBarBox{
+    /* border: 2px solid blue; */
+    display: flex;
+    gap: .8rem;
+    width: 80%;
+
+  }
+  .inputFieldBox{
+    /* background-color: red; */
+    border: 1px solid;
+  }
+  .ringBox{
+    display: none;
+  }
+
+  .categorySort{
+    padding: 0px 1rem .5rem;
+  }
+}
